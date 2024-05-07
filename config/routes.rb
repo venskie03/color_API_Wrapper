@@ -7,7 +7,7 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "posts#index"
-
+  root "home#home"
   namespace :api do
     namespace :v1 do
       get "/neoncolors", to: "dashboard#neoncolors"
