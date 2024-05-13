@@ -140,9 +140,9 @@ class Colorlist
   def generate_night_colors
     colors = []
     300.times do
-      r = rand(0..50)   
-      g = rand(0..50)   
-      b = rand(50..100)  #
+      r = rand(0..50)
+      g = rand(0..50)
+      b = rand(100..150)
       color = "#%02X%02X%02X" % [r, g, b]
       colors << color
     end
@@ -272,9 +272,9 @@ class Colorlist
   def generate_coffee_colors
     colors = []
     300.times do
-      r = rand(70..100)
-      g = rand(30..70)  
-      b = rand(0..30)   
+      r = rand(150..200)
+      g = rand(100..150)
+      b = rand(50..100)
       color = "#%02X%02X%02X" % [r, g, b]
       colors << color
     end

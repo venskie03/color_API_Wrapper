@@ -35,7 +35,7 @@ Rails.application.routes.draw do
       get "/coffeecolors", to: "dashboard#coffeecolors"
       get "/weddingcolors", to: "dashboard#weddingcolors"
       get "/christmascolors", to: "dashboard#christmascolors"
-      get "/halloweencolors", to: "dashboard#halloweencolors" 
+      get "/halloweencolors", to: "dashboard#halloween" 
 
       get "/popularcolors", to: "dashboard#popular" 
       get "/newcolors", to: "dashboard#newcolors" 
