@@ -318,7 +318,7 @@ class Colorlist
   end
 
   def generate_popular_colors
-    c = []
+    colors = []
     300.times do
       r = rand(256)
       g = rand(256)
@@ -331,7 +331,7 @@ class Colorlist
 
   def generate_random_palette
     colors = []
-    5.times do
+    300.times do
       r = rand(256)
       g = rand(256)
       b = rand(256)
