@@ -156,5 +156,17 @@ class Api::V1::DashboardController < ApplicationController
         render json: {colors: @colors}
     end
 
+    def popular
+        color_list = Colorlist.new
+        @colors = color_list.generate_popular_colors
+        render json: {colors: @colors}
+    end
+
+    def newcolors
+        color_list = Colorlist.new
+        @colors = color_list.generate_random_palette
+        render json: {colors: @colors}
+    end
+
 
 end

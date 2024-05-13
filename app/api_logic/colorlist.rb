@@ -317,5 +317,29 @@ class Colorlist
     colors
   end
 
+  def generate_popular_colors
+    c = []
+    300.times do
+      r = rand(256)
+      g = rand(256)
+      b = rand(256)
+    color = "#%02X%02X%02X" % [r, g, b]
+      colors << color
+    end
+    colors
+  end
+
+  def generate_random_palette
+    colors = []
+    5.times do
+      r = rand(256)
+      g = rand(256)
+      b = rand(256)
+      color = "#%02X%02X%02X" % [r, g, b]
+      colors << color
+    end
+    colors
+  end
+
 
 end
