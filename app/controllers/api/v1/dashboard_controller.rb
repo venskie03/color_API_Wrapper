@@ -50,7 +50,7 @@ class Api::V1::DashboardController < ApplicationController
 
     def happycolors
         color_list = Colorlist.new
-        @colors = color_list.  def generate_happy_colors
+        @colors = color_list.generate_happy_colors
         render json: {colors: @colors}
     end
 
